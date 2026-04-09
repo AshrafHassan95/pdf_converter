@@ -18,6 +18,9 @@ pdf_images
 /App_Data
 /secrets
 /data
+/xls
+/xlsx
+/xlsm
 /input
 /tiff
 /pdf
