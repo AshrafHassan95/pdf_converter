@@ -1,63 +1,105 @@
-bin
-obj
-csx
-.vs
-edge
-Publish
-
-*.user
-*.suo
-*.cscfg
-*.Cache
-project.lock.json
-
-/packages
-/TestResults
-pdf_images
-/tools/NuGet.exe
-/App_Data
-/secrets
-/data
-/xls
-/xlsx
-/xlsm
-/input
-/tiff
-/pdf
-/dataset
-.secrets
-appsettings.json
-local.settings.json
-
-node_modules
-dist
-
-# Local python packages
-.python_packages/
-
-# Python Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Byte-compiled / optimized / DLL files
+# =========================
+# 🐍 Python
+# =========================
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
-# Azurite artifacts
-__blobstorage__
-__queuestorage__
-__azurite_db*__.json
+# Virtual environments
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
 
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
 
-# -----------------------
-# Environment & secrets
-# -----------------------
+# =========================
+# 🔐 Environment & Secrets
+# =========================
 .env
 .env.local
 .env.*.local
+
+secrets/
+*.key
+*.pem
+
+# Config files (local only)
+appsettings.json
+local.settings.json
+
+# =========================
+# 📊 Data & Input Files
+# =========================
+# Raw input/output folders
+input/
+tiff/
+pdf/
+dataset/
+data/
+
+# File types (ignore anywhere)
+*.xls
+*.xlsx
+*.xlsm
+*.csv
+*.parquet
+
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+
+*.pdf
+
+# =========================
+# 🧪 Logs & Temp Files
+# =========================
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+# =========================
+# 🧰 IDE & Editor
+# =========================
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+
+# Visual Studio specific
+bin/
+obj/
+.vs/
+
+# =========================
+# 🌐 Node (if used)
+# =========================
+node_modules/
+dist/
+
+# =========================
+# ☁️ Cloud / Azure / Misc
+# =========================
+.python_packages/
+
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+
+# =========================
+# 🧾 OS Files
+# =========================
+.DS_Store
+Thumbs.db
