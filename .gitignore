@@ -18,6 +18,7 @@ pdf_images
 /App_Data
 /secrets
 /data
+/input
 /tiff
 /pdf
 /dataset
